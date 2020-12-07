@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88209ffcae744b898f58eb170001e3ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_88209ffcae744b898f58eb170001e3ef" ></div>
+        
+</body>
+<script>    
+    
+            var map_88209ffcae744b898f58eb170001e3ef = L.map(
+                "map_88209ffcae744b898f58eb170001e3ef",
+                {
+                    center: [40.7128, -73.9352],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15d4eeda1bff42d1b8f6cd8d5a4da376 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_88209ffcae744b898f58eb170001e3ef);
+        
+    
+            var marker_ba77223260c6408a8785d488bbcae4ce = L.marker(
+                [40.74843597, -73.98580932],
+                {}
+            ).addTo(map_88209ffcae744b898f58eb170001e3ef);
+        
+    
+        var popup_8e77cf2d15c34cebbaa3d2f1df007a21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9656b0521024749bcb67aa20b0dab1a = $(`<div id="html_e9656b0521024749bcb67aa20b0dab1a" style="width: 100.0%; height: 100.0%;"><i>Empire State Bldg</i></div>`)[0];
+            popup_8e77cf2d15c34cebbaa3d2f1df007a21.setContent(html_e9656b0521024749bcb67aa20b0dab1a);
+        
+
+        marker_ba77223260c6408a8785d488bbcae4ce.bindPopup(popup_8e77cf2d15c34cebbaa3d2f1df007a21)
+        ;
+
+        
+    
+    
+            marker_ba77223260c6408a8785d488bbcae4ce.bindTooltip(
+                `<div>
+                     Empire State Bldg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cb046a9687543eeb1b378a2c36caacc = L.marker(
+                [40.767459869, -73.970710754],
+                {}
+            ).addTo(map_88209ffcae744b898f58eb170001e3ef);
+        
+    
+        var popup_a62c4ab2ab704e07a815b58b8018f222 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2ed89eb5b6f4b62a00e7a2ac504be6f = $(`<div id="html_f2ed89eb5b6f4b62a00e7a2ac504be6f" style="width: 100.0%; height: 100.0%;"><b>Central Park</b></div>`)[0];
+            popup_a62c4ab2ab704e07a815b58b8018f222.setContent(html_f2ed89eb5b6f4b62a00e7a2ac504be6f);
+        
+
+        marker_5cb046a9687543eeb1b378a2c36caacc.bindPopup(popup_a62c4ab2ab704e07a815b58b8018f222)
+        ;
+
+        
+    
+    
+            var marker_384426247b254ff9a6d8df435d3dcf22 = L.marker(
+                [40.75271606, -73.97721862],
+                {}
+            ).addTo(map_88209ffcae744b898f58eb170001e3ef);
+        
+    
+            var icon_567f17aa118e41afae992faccf8e016a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_384426247b254ff9a6d8df435d3dcf22.setIcon(icon_567f17aa118e41afae992faccf8e016a);
+        
+    
+        var popup_eadb92a087a342ea9379d7426204438a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45ab7be8a78d40fd8fa0d4a15c117c1a = $(`<div id="html_45ab7be8a78d40fd8fa0d4a15c117c1a" style="width: 100.0%; height: 100.0%;">Grand Central Terminal</div>`)[0];
+            popup_eadb92a087a342ea9379d7426204438a.setContent(html_45ab7be8a78d40fd8fa0d4a15c117c1a);
+        
+
+        marker_384426247b254ff9a6d8df435d3dcf22.bindPopup(popup_eadb92a087a342ea9379d7426204438a)
+        ;
+
+        
+    
+    
+            var marker_5dc806e6b30f4d4c8931b32b12e1d2d3 = L.marker(
+                [40.713409424, -74.013343811],
+                {}
+            ).addTo(map_88209ffcae744b898f58eb170001e3ef);
+        
+    
+            var icon_707238188e204bbeb1f3c324d9198248 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5dc806e6b30f4d4c8931b32b12e1d2d3.setIcon(icon_707238188e204bbeb1f3c324d9198248);
+        
+    
+        var popup_79c6d64ea18f46ddbc255cacefcea12e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ccaf5d689e441c79c56cb5f9d329fd7 = $(`<div id="html_1ccaf5d689e441c79c56cb5f9d329fd7" style="width: 100.0%; height: 100.0%;">One World Trade Center</div>`)[0];
+            popup_79c6d64ea18f46ddbc255cacefcea12e.setContent(html_1ccaf5d689e441c79c56cb5f9d329fd7);
+        
+
+        marker_5dc806e6b30f4d4c8931b32b12e1d2d3.bindPopup(popup_79c6d64ea18f46ddbc255cacefcea12e)
+        ;
+
+        
+    
+</script>
